@@ -24,7 +24,6 @@ export default function MacbookModel14(props) {
 
   useEffect(() => {
     scene.traverse((child) => {
-      console.log(child);
       if (child.isMesh) {
         if (!noChangeParts.includes(child.name)) {
           child.material.color = new Color(color);
