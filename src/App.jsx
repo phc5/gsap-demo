@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import ProductViewer from './components/ProductViewer';
+import Showcase from './components/Showcase';
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 
@@ -12,6 +13,7 @@ export default function App() {
       <NavBar />
       <Hero />
       <ProductViewer />
+      <Showcase />
     </main>
   );
 }
