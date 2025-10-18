@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import useMacbookStore from '../store';
 import MacbookModel14 from './models/Macbook-14';
+import StudioLights from './StudioLights';
 
 function ProductViewer() {
   const { color, scale, setColor, setScale } = useMacbookStore();
@@ -58,7 +59,8 @@ function ProductViewer() {
       </div>
 
       <Canvas id="canvas">
-        <MacbookModel14 scale={0.06} position={[-1, 0, 0]} />
+        <StudioLights />
+        <MacbookModel14 scale={0.06} position={[0, 0, 0]} />
         <OrbitControls enablezoom={false} />
       </Canvas>
     </section>
